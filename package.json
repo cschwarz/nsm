@@ -1,0 +1,22 @@
+{
+  "name": "nsm",
+  "version": "0.0.1",
+  "description": "A service manager for node",
+  "main": "nsm.js",
+  "preferGlobal": "true",
+  "bin": {
+    "nsm": "./nsm.js"
+  },
+  "author": "Christian Schwarz",
+  "license": "MIT",
+  "dependencies": {
+    "node-mac": "~0.1.3",
+    "node-linux": "~0.1.2",
+    "node-windows": "https://github.com/cschwarz/node-windows/tarball/remove-os",
+    "optimist": "~0.6.0"
+  },
+  "repository": {
+    "type" : "git",
+    "url" : "http://github.com/cschwarz/nsm.git"
+  }
+}
