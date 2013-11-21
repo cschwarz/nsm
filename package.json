@@ -18,5 +18,13 @@
   "repository": {
     "type" : "git",
     "url" : "http://github.com/cschwarz/nsm.git"
-  }
+  },
+  "keywords": [
+    "service manager",
+    "service",
+    "daemon",
+    "windows",
+    "linux",
+    "mac"
+  ]
 }
