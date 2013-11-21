@@ -23,6 +23,12 @@ nsm --start
 
 nsm requires root privileges on all platforms.
 
+Example
+-------
+
+```
+
+
 Troubleshooting
 ---------------
 
