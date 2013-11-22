@@ -82,18 +82,6 @@ Error: Cannot find module 'npm'
 
 Add NODE_PATH (e.g.: C:\Program Files\nodejs\node_modules) to your environment variables.
 
-###Linux and OS X
-
-```
-npm ERR! Error: EACCES, open '*.lock'
-```
-
-Have a look at http://howtonode.org/introduction-to-npm which suggests to set your user account as the owner of /usr/local:
-
-```
-sudo chown -R $USER /usr/local
-```
-
 Credits
 -------
 
