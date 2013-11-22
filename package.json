@@ -1,6 +1,6 @@
 {
   "name": "nsm",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A service manager for node",
   "main": "nsm.js",
   "preferGlobal": "true",
