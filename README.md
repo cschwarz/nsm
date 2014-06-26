@@ -29,7 +29,7 @@ nsm requires root privileges on all platforms.
 
 ```
 nsm --install --name=anothername --script=src/server.js --env.NODE_ENV=production
-nsm --start
+nsm --start --name=anothername
 ```
 
 
