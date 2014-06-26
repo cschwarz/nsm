@@ -14,14 +14,22 @@ else if (platform === 'darwin')
 else
     throw new Error('Platform \'' + platform + '\' is not supported');
 
-Service.create = function () {
+Service.create = function (argv) {
     var package = require(path.join(process.cwd(), './package.json'));
 
-    var service = new Service({
-        name: package.name,
-        description: package.description,
-        script: package.main
+    var env = Object.keys(argv.env || {}).map(function (key) {
+        return { name: key, value: argv.env[key] };
     });
+
+    var options = {
+        name: argv.name || package.name,
+        description: argv.description || package.description,
+        script: argv.script || package.main,
+        logmode: argv.logmode,
+        env: env
+    };
+
+    var service = new Service(options);
 
     return service;
 };

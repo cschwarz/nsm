@@ -25,6 +25,14 @@ nsm --start
 
 nsm requires root privileges on all platforms.
 
+## Change name/description/script/environment variables
+
+```
+nsm --install --name=anothername --script=src/server.js --env.NODE_ENV=production
+nsm --start
+```
+
+
 Example
 -------
 
