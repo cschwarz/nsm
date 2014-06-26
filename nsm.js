@@ -12,7 +12,7 @@ var argv = optimist
     .describe('restart', 'Restart a service')
     .argv;
 
-var service = Service.create();
+var service = Service.create(argv);
 
 if (argv.install)
     service.install();
